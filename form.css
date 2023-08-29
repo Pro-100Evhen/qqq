@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:regular,500,600,700&display=swap");
+.pay-form{
+   max-width: 1000px;
+   margin: 0px auto;
+   font-family: "Nunito";
+   margin-top: 55px;
+   margin-bottom: 55px;
+   padding-right: 20px;
+   padding-left: 20px;
+}
+.pay-form .column {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 15px;
+}
+.pay-form .term a{
+   color: #1e7e94;
+}
+.pay-form .term {
+   font-weight: 400;
+}
+.pay-form input{
+   border-radius: 5px;
+   padding: 10px;
+   background-color: #f3f3f3;
+   color: #222121;
+   border: none;
+   min-height: 28px;
+}
+.pay-form input::placeholder{
+   border-radius: 5px;
+   padding: 10px;
+   background-color: #f3f3f3;
+   color: #222121;
+   border: none;
+   min-height: 28px;
+   letter-spacing: 1.5px;
+}
+.pay-form .column label {
+   margin-bottom: 10px;
+}
+.pay-form .title {
+   margin: 0px;
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+
+.pay-form .sub-title {
+   margin-top: 0;
+   margin-bottom: 30px;
+   font-weight: 400;
+   font-size: 14px;
+
+}
+
+.pay-form .half-inputs {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 20px;
+}
+@media (max-width: 440px){
+   .pay-form .half-inputs {
+      grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+   }
+}
+
+.pay-form .phone {
+   row-gap: 10px;
+   display: grid;
+   grid-template-columns: auto auto ;
+}
+@media (max-width: 420px){
+   .pay-form .phone{
+      grid-template-columns: auto auto;
+   }
+}
+.pay-form .phone-pref {
+   background-color: transparent;
+   border-radius: 10px;
+   min-width: 90px;
+   padding: 10px;
+   margin-right: 10px;
+}
+
+.pay-form .phone-type {
+   background-color: transparent;
+   border-radius: 10px;
+   min-width: 90px;
+   padding: 10px;
+   margin-right: 10px;
+}
+@media (max-width: 420px){ 
+   .pay-form .phone-pref {
+      min-width: 60px;
+      padding: 5px;
+      margin-right: 5px;
+   }
+   
+   .pay-form .phone-type {
+      min-width: 60px;
+      padding: 5px;
+      margin-right: 5px;
+   }
+}
+.pay-form input.email {
+   width: calc(100% - 22px);
+   margin-bottom: 30px;
+}
+.pay-form .pay {
+   width: 100%;
+   padding: 20px;
+   font-size: 24px;
+   background-color: #1e7e94;
+   color: #fff;
+   border-radius: 10px;
+   transition: all 0.3s ease 0s;
+}
+.pay-form .pay:hover {
+   background-color: #108fac;
+}
+

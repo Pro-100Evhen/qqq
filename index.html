@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="form.css" />
+   </head>
+   <body>
+      <section class="pay-form">
+         <h1 class="title">Pay with debit or credit card</h1>
+         <form>
+            <div class="cart-number column">
+               <label>Please enter a card number</label>
+               <input type="text" placeholder="Card number" />
+            </div>
+            <div class="half-inputs">
+               <div class="first-name column">
+                  <label>First name</label>
+                  <input type="text" placeholder="Sem" />
+               </div>
+               <div class="expires column">
+                  <label>Expiration date</label>
+                  <input type="text" placeholder="07/09" />
+               </div>
+               <div class="last-name column">
+                  <label>Last name</label>
+                  <input type="text" placeholder="Sizlack" />
+               </div>
+               <div class="csc column">
+                  <label>CVC/CVV code</label>
+                  <input type="text" placeholder="444" />
+               </div>
+              
+            </div>
+
+            <div class="adress">
+               <h3 class="adress-title">Billing address</h3>
+               <div class="street column">
+                  <label>Street name and house number</label>
+                  <input type="text" placeholder="e.g. 123 Main St" />
+               </div>
+
+               <div class="second-line column">
+                  <label>Address line 2</label>
+                  <input type="text" placeholder="e.g. Apt 456" />
+               </div>
+
+               <div class="postal-code column">
+                  <label>Postal code</label>
+                  <input type="text" placeholder="e.g. 12345" />
+               </div>
+
+               <div class="city column">
+                  <label>City</label>
+                  <input type="text" placeholder="e.g. New York" />
+               </div>
+            </div>
+
+            <div class="contact">
+               <h3 class="contact-title title">Contact Information</h3>
+               <div class="phone">
+
+                  <select class="phone-pref">
+                     <option value="Україна" selected>+380</option>
+                     <option value="Молдова">+373</option>
+                     <option value="Сербія">+381</option>
+                  </select>
+
+                  <input type="tel" class="tel" placeholder="your phone" />
+               </div>
+               <h4>We'll text you a security this number</h4>
+               <input type="email" class="email" placeholder="Email" />
+            </div>
+
+            <button class="pay">Pay $9.99</button>
+            <h4 class="term">By making the payment, you agree to <a href="#">Terms of Use</a></h4>
+         </form>
+      </section>
+   </body>
+</html>
